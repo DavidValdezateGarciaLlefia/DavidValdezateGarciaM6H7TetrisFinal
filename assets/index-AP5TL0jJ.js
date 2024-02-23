@@ -91,7 +91,7 @@
                 
                 <div id="insertaNick" class="mt-5 border bg-dark d-none flex-column align-items-center justify-content-center container" style="max-width: 500px;">
     <div class="text-light text-center">
-        <div><img src="../src/img/gameOverTetris.jpg" style="max-width:100%; height:auto;" alt="game over"></div>
+        <div><img src="assets/gameOverTetris.jpg" style="max-width:100%; height:auto;" alt="game over"></div>
         <label for="nickUser" class="mr-2 mb-3">Nick:</label>
         <input id="nickUser" type="text" class="mt-3 form-control w-100" placeholder="Pon tu nick">
         <button id="btnNick" class="mt-3 btn btn-light" type="submit">Ingresar</button>
@@ -122,7 +122,7 @@
     `,script:()=>{document.querySelector("#botonHome").addEventListener("click",()=>{document.querySelector("body").innerHTML=m.template,m.script()}),document.querySelector("#juegoPuntos").innerHTML=e.puntuacion,P.script(),e.controlTeclas(),console.log(s.partides),document.querySelector("#btnNick").addEventListener("click",()=>{const t=document.querySelector("#nickUser").value;let a=s.calculaDia();console.log(t),document.querySelector("body").innerHTML=s.template,s.pintaDatosPartida({avatar:"https://www.svgrepo.com/show/384669/account-avatar-profile-user-13.svg",nick:t,puntos:e.puntuacion,fecha:a}),e.finalizarPartida(),s.script()})}},m={template:`
     <body class="text-light">
 		<header class="d-flex align-items-center justify-content-center">
-			<img src="../src/img/logo.png" alt="logo" width="200" class="mt-5" />
+			<img src="assets/logo.png" alt="logo" width="200" class="mt-5" />
 		</header>
 		<main class="container mt-5 bg-opacity-50 bg-dark p-2">
 			<!-- Pantalla de introducción -->
@@ -172,7 +172,7 @@
 			body {
 				background-repeat: no-repeat;
 				background-size: cover;
-				background-image: url("../src/img/fondo.jpg");
+				background-image: url("assets/fondo.jpg");
 				font-family: "VT323", monospace;
 				font-size: 25px;
 			}
